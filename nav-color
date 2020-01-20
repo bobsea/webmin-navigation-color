@@ -1,0 +1,21 @@
+Don't like the new default brown color on the webmin page?
+After much searching on the internet I finally found a way to change it with a simple edit of a confg file.
+
+I have tried it and it works for me but I am not a programer so I don't know if it will break the system at some point.
+
+So here is how I changed the color from 'brown' to 'blue' the old default color.
+
+In the terminal go to /etc/webmin/authentic-theme
+Look for the settings file named settings-'your username'
+Open the file using sudo nano settings-username (use your text editor)
+
+Look for the line - settings_navigation_color='xxxxxx'; where xxxxxx is the current navigation color.
+Change the color to what you want ie 'red' 'blue' 'green'
+
+Save the file and navigate to the webmin page, if you already have the page open refresh it to see the change.
+
+That is it! Hope that helps you.
+
+Bob
+
+
